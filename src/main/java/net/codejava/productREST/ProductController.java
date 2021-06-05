@@ -31,7 +31,7 @@ public class ProductController {
     }
 
     @GetMapping("/products1/{name}")
-    public List<Product> listByName(@PathVariable String name){
+    public List<Integer> listByName(@PathVariable String name){
         return service.listByName(name);
     }
 

@@ -27,7 +27,7 @@ public class ProductService {
         repo.deleteById(id);
     }
 
-    public List<Product> listByName(String name){
+    public List<Integer> listByName(String name){
         return repo.findByName(name);
     }
 }
