@@ -15,6 +15,11 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
+    @GetMapping("/")
+    public String homePage(){
+        return "welcome page";
+    }
+
     @GetMapping("/products")
     public List<Product> list(){
         return service.listAll();
